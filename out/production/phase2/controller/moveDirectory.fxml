@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="searchPane" prefHeight="281.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MoveDirectory">
+   <children>
+       <HBox layoutY="-1.0" prefHeight="281.0" prefWidth="350.0">
+          <children>
+              <Pane prefHeight="281.0" prefWidth="10.0" />
+              <VBox prefHeight="266.0" prefWidth="327.0">
+                 <children>
+                     <Pane prefHeight="75.0" prefWidth="327.0" />
+                     <Label prefHeight="65.0" prefWidth="219.0" text="Enter New Directory Here">
+                         <VBox.margin>
+                             <Insets left="60.0" />
+                         </VBox.margin>
+                         <font>
+                             <Font size="16.0" />
+                         </font>
+                     </Label>
+                     <HBox prefHeight="48.0" prefWidth="327.0">
+                        <children>
+                            <TextField fx:id="newDirectory" prefHeight="27.0" prefWidth="279.0" promptText="ex: /uer/......" />
+                            <Button fx:id="move" mnemonicParsing="false" onAction="#movePlace" text="OK">
+                                <HBox.margin>
+                                    <Insets left="5.0" />
+                                </HBox.margin>
+                            </Button>
+                        </children>
+                     </HBox>
+                     <Button fx:id="search" mnemonicParsing="false" onAction="#search" text="Search">
+                         <VBox.margin>
+                             <Insets left="140.0" />
+                         </VBox.margin>
+                     </Button>
+                     <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="62.0" text="Back">
+                         <VBox.margin>
+                             <Insets left="140.0" top="10.0" />
+                         </VBox.margin>
+                     </Button>
+                 </children>
+              </VBox>
+          </children>
+       </HBox>
+   </children>
+</AnchorPane>

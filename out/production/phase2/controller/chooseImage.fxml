@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="now" prefHeight="600.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/8" fx:controller="controller.ChooseImage">
+    <HBox prefHeight="600.0" prefWidth="801.0">
+        <ListView fx:id="list" onMouseClicked="#loadingImages" prefHeight="590.0" prefWidth="324.0">
+            <HBox.margin>
+                <Insets bottom="5.0" left="5.0" top="5.0"/>
+            </HBox.margin>
+        </ListView>
+        <VBox prefHeight="600.0" prefWidth="469.0">
+            <ImageView fx:id="imageLook" fitHeight="408.0" fitWidth="470.0" pickOnBounds="true"
+                       preserveRatio="true">
+                <VBox.margin>
+                    <Insets left="5.0" right="5.0" top="5.0"/>
+                </VBox.margin>
+            </ImageView>
+            <Button fx:id="Open" mnemonicParsing="false" onAction="#open" prefHeight="43.0"
+                    prefWidth="159.0" text="Open">
+                <VBox.margin>
+                    <Insets left="150.0" top="20.0"/>
+                </VBox.margin>
+                <font>
+                    <Font size="16.0"/>
+                </font>
+            </Button>
+            <HBox prefHeight="48.0" prefWidth="333.0">
+                <VBox.margin>
+                    <Insets top="50.0"/>
+                </VBox.margin>
+                <Button fx:id="history" mnemonicParsing="false" onAction="#getHistory" prefHeight="30.0"
+                        prefWidth="126.0" text="Edit History">
+                    <HBox.margin>
+                        <Insets left="10.0" top="14.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="back" mnemonicParsing="false" onAction="#back" text="Back">
+                    <HBox.margin>
+                        <Insets left="200.0" top="15.0"/>
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="quit" mnemonicParsing="false" onAction="#quit" prefHeight="27.0"
+                        prefWidth="50.0" text="Quit">
+                    <HBox.margin>
+                        <Insets left="15.0" top="15.0"/>
+                    </HBox.margin>
+                </Button>
+            </HBox>
+        </VBox>
+    </HBox>
+</AnchorPane>

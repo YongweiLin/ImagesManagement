@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="rootPane" prefHeight="600.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/8" fx:controller="controller.ButtonControl">
+    <children>
+        <HBox prefHeight="595.0" prefWidth="798.0">
+            <children>
+                <Pane prefHeight="595.0" prefWidth="152.0"/>
+                <VBox prefHeight="595.0" prefWidth="477.0">
+                    <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0"/>
+                        <Label prefHeight="104.0" prefWidth="428.0" text="Image Manager" textAlignment="CENTER"
+                               textFill="#4224a4">
+                            <font>
+                                <Font size="46.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets left="60.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="100.0" prefWidth="404.0">
+                            <children>
+                                <Button onAction="#use" prefHeight="58.0" prefWidth="241.0"
+                                        text="Choosing A Directory...">
+                                    <font>
+                                        <Font size="12.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="10.0"/>
+                                    </HBox.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#tagManager" prefHeight="57.0"
+                                        prefWidth="241.0" text="Tag Manager">
+                                    <HBox.margin>
+                                        <Insets left="20.0" right="10.0" top="10.0"/>
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="595.0" prefWidth="0.0"/>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

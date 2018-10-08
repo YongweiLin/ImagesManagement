@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="344.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="controller.AddTags">
+    <children>
+        <VBox prefHeight="327.0" prefWidth="344.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="add">
+                            <HBox.margin>
+                                <Insets left="40.0" top="50.0"/>
+                            </HBox.margin>
+                        </TextField>
+                        <Button fx:id="addOk" mnemonicParsing="false" onAction="#addOk" text="Add Tag">
+                            <HBox.margin>
+                                <Insets left="40.0" top="50.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="330.0" prefWidth="344.0">
+                    <children>
+                        <VBox fx:id="addTags" prefHeight="334.0" prefWidth="124.0">
+                            <HBox.margin>
+                                <Insets left="50.0" top="10.0"/>
+                            </HBox.margin>
+                        </VBox>
+                        <Button fx:id="multiAdd" mnemonicParsing="false" onAction="#multipleAdd" text="Choose to Add">
+                            <HBox.margin>
+                                <Insets left="40.0" top="40.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox prefHeight="9.0" prefWidth="344.0">
+                    <children>
+                        <Button fx:id="back" mnemonicParsing="false" onAction="#back" text="Back">
+                            <HBox.margin>
+                                <Insets left="240.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

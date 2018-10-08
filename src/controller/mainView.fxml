@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="now" xmlns="http://javafx.com/javafx/8"
+            fx:controller="controller.MainView">
+    <children>
+        <HBox prefHeight="602.0" prefWidth="806.0">
+            <children>
+                <VBox prefHeight="602.0" prefWidth="1062.0">
+                    <children>
+                        <HBox prefHeight="34.0" prefWidth="801.0">
+                            <VBox.margin>
+                                <Insets left="5.0" top="30.0"/>
+                            </VBox.margin>
+                            <children>
+                                <Label fx:id="name" prefHeight="30.0" prefWidth="681.0">
+                                    <HBox.margin>
+                                        <Insets left="10.0"/>
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <ImageView fx:id="imageLook" fitHeight="363.0" fitWidth="476.0"
+                                           nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                        <Insets left="50.0"/>
+                                    </HBox.margin>
+                                </ImageView>
+                                <VBox>
+                                    <opaqueInsets>
+                                        <Insets bottom="10.0" right="-10.0"/>
+                                    </opaqueInsets>
+                                    <HBox.margin>
+                                        <Insets left="40.0"/>
+                                    </HBox.margin>
+                                    <children>
+                                        <Label prefHeight="38.0" prefWidth="96.0" text="Current Tags:"/>
+                                        <ListView fx:id="imageTags" prefHeight="244.0" prefWidth="214.0"/>
+                                        <Button fx:id="deleteOk" mnemonicParsing="false" onAction="#deleteOk"
+                                                prefHeight="27.0" prefWidth="121.0" text="Delete Tag">
+                                            <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="30.0" top="10.0"/>
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button fx:id="addOk" mnemonicParsing="false" onAction="#addOk"
+                                                prefHeight="27.0" prefWidth="121.0" text="Add Tag">
+                                            <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                            </padding>
+                                            <VBox.margin>
+                                                <Insets left="30.0" top="10.0"/>
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="20.0"/>
+                            </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="97.0" prefWidth="786.0">
+                            <VBox.margin>
+                                <Insets left="20.0"/>
+                            </VBox.margin>
+                            <children>
+                                <Button fx:id="move" mnemonicParsing="false" onAction="#move" prefHeight="27.0"
+                                        prefWidth="146.0" text="Move Image to...">
+                                    <HBox.margin>
+                                        <Insets left="60.0" top="15.0"/>
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="backToPrev" mnemonicParsing="false" onAction="#backPrev"
+                                        text="Back to Previous Name">
+                                    <HBox.margin>
+                                        <Insets left="30.0" top="15.0"/>
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <HBox spacing="5.0">
+                            <children>
+                                <Pane prefHeight="37.0" prefWidth="620.0">
+                                    <HBox.margin>
+                                        <Insets/>
+                                    </HBox.margin>
+                                </Pane>
+                                <Button fx:id="back" mnemonicParsing="false" onAction="#back" prefHeight="27.0"
+                                        prefWidth="58.0" text="Back">
+                                    <HBox.margin>
+                                        <Insets top="5.0"/>
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="quit" mnemonicParsing="false" onAction="#quit" prefHeight="27.0"
+                                        prefWidth="59.0" text="Quit">
+                                    <HBox.margin>
+                                        <Insets left="10.0" right="30.0" top="5.0"/>
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="5.0"/>
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

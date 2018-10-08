@@ -1,0 +1,35 @@
+# Phase 1 Design Questions
+
+Which part(s) of the program are responsible for reading the contents of the
+starting directory?
+
+What happens when a new tag is created?
+
+Which class is keeping track of the association between tags and files?
+
+##########
+
+Where does the class that represents tags get instantiated?
+
+After an instance of class that represents tags is created, where is it stored?
+
+How does the class for the user get information from the directory it choose?
+
+How does the class for the user add or delete tags?
+
+Do we need two separate classes for a tag and a tag management system? 
+
+##########
+
+Dose a tag represent many photos?
+
+How to connect the data to the tags?
+
+
+###########
+
+How should we deal with the the input data?
+
+##########
+
+Should the image to have a list store the old tag?

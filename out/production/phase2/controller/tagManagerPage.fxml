@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="now" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TagManagerPage">
+    <children>
+        <HBox layoutX="-4.0" prefHeight="593.0" prefWidth="810.0">
+            <children>
+                <VBox prefHeight="588.0" prefWidth="149.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="85.0" text="Tag   Base">
+                            <VBox.margin>
+                                <Insets left="20.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <ListView fx:id="tagBase" onEditStart="#initialize" onMouseClicked="#setTagBase" prefHeight="585.0" prefWidth="193.0">
+                            <VBox.margin>
+                                <Insets bottom="3.0" />
+                            </VBox.margin>
+                        </ListView>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                    </HBox.margin>
+                </VBox>
+                <VBox prefHeight="593.0" prefWidth="117.0">
+                    <padding>
+                        <Insets top="5.0" />
+                    </padding>
+                    <children>
+                        <Label text="Newly Add">
+                            <VBox.margin>
+                                <Insets left="20.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <ListView fx:id="newlyAdd" prefHeight="617.0" prefWidth="107.0">
+                            <VBox.margin>
+                                <Insets bottom="3.0" left="5.0" />
+                            </VBox.margin>
+                        </ListView>
+                    </children>
+                </VBox>
+                <VBox prefHeight="593.0" prefWidth="274.0">
+                    <children>
+                        <ListView fx:id="thumbnail" prefHeight="585.0" prefWidth="281.0">
+                            <VBox.margin>
+                                <Insets bottom="3.0" left="5.0" top="5.0" />
+                            </VBox.margin>
+                        </ListView>
+                    </children>
+                </VBox>
+                <VBox prefHeight="593.0" prefWidth="298.0">
+                    <children>
+                        <Label prefHeight="26.0" prefWidth="242.0" text="Please Choose a directory to view the ">
+                            <VBox.margin>
+                                <Insets left="30.0" top="40.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label text="images that tag contains! ">
+                            <VBox.margin>
+                                <Insets left="32.0" />
+                            </VBox.margin>
+                        </Label>
+                        <TextField fx:id="currentDirectory" promptText="Current Directory">
+                            <VBox.margin>
+                                <Insets left="5.0" right="10.0" top="5.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <HBox prefHeight="30.0" prefWidth="289.0">
+                            <children>
+                                <Button fx:id="search" mnemonicParsing="false" onAction="#setSearch" text="Search">
+                                    <HBox.margin>
+                                        <Insets left="70.0" top="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="clear" mnemonicParsing="false" onAction="#setClear" text="  Clear  ">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <TextField fx:id="adding" promptText="Enter tag to add">
+                            <VBox.margin>
+                                <Insets left="10.0" right="10.0" top="100.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Button fx:id="add" mnemonicParsing="false" onAction="#setAdd" prefHeight="30.0" prefWidth="212.0" text="Add Tags">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="35.0" top="5.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="delete" mnemonicParsing="false" onAction="#setDelete" prefHeight="30.0" prefWidth="212.0" text="Delete Tags">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="35.0" top="40.0" />
+                            </VBox.margin>
+                        </Button>
+                        <HBox prefHeight="38.0" prefWidth="289.0">
+                            <VBox.margin>
+                                <Insets top="150.0" />
+                            </VBox.margin>
+                            <children>
+                                <Button fx:id="back" mnemonicParsing="false" onAction="#back" text="Back">
+                                    <HBox.margin>
+                                        <Insets left="120.0" top="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="quit" mnemonicParsing="false" onAction="#quit" prefHeight="27.0" prefWidth="50.0" text="Quit">
+                                    <HBox.margin>
+                                        <Insets left="15.0" top="5.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

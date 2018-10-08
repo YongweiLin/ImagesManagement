@@ -1,0 +1,19 @@
+CSC207 Project 1 Phase 1
+ Yongwei Lin
+(linyongw)
+- Design and Implement all the mathods in  back end model.
+- Create Command.java to Test methods in the back end.
+- Help revise controller part in the front end.
+
+Siyi Wang
+(wangsi31)
+- Design the preference of the program 
+- Design the MVC and implement the controller.
+- Make the UML
+- Fix bugs in controller as well as in back end.
+
+Lezhi Wang
+(wanglezh)
+-Draw the CRC
+- Help design and revise backEnd model and application.
+-Write the help.txt
