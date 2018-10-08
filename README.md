@@ -2,6 +2,7 @@
 A images management software that allow users to add/delete/manage tags
 
 ======================
+
 1.Open the terminal and get to the source directory named "src"
 
 2. Then copy and paste:
